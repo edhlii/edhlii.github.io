@@ -6,8 +6,18 @@
     <description>Recent content in Posts on edhlii&#39;s Blog</description>
     <generator>Hugo -- 0.144.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2025 16:28:32 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 08:25:26 +0700</lastBuildDate>
     <atom:link href="https://edhlii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trải nghiệm dùng Linux của mình (Arch btw)</title>
+      <link>https://edhlii.github.io/posts/trai-nghiem-dung-linux/</link>
+      <pubDate>Fri, 21 Feb 2025 08:25:26 +0700</pubDate>
+      <guid>https://edhlii.github.io/posts/trai-nghiem-dung-linux/</guid>
+      <description>&lt;p&gt;Chào mọi người!&lt;/p&gt;
+&lt;p&gt;Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊&lt;/p&gt;
+&lt;h1 id=&#34;tại-sao-dùng-linux-&#34;&gt;Tại sao dùng Linux 🐧&lt;/h1&gt;
+&lt;p&gt;Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là &lt;strong&gt;bloat&lt;/strong&gt;. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>First Post</title>
       <link>https://edhlii.github.io/posts/first-post/</link>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Trải nghiệm dùng Linux của mình (Arch btw) | edhlii&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Chào mọi người!
+Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊
+Tại sao dùng Linux 🐧
+Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là bloat. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.">
+<meta name="author" content="">
+<link rel="canonical" href="https://edhlii.github.io/posts/trai-nghiem-dung-linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edhlii.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edhlii.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edhlii.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edhlii.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edhlii.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edhlii.github.io/posts/trai-nghiem-dung-linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://edhlii.github.io/posts/trai-nghiem-dung-linux/">
+  <meta property="og:site_name" content="edhlii&#39;s Blog">
+  <meta property="og:title" content="Trải nghiệm dùng Linux của mình (Arch btw)">
+  <meta property="og:description" content="Chào mọi người!
+Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊
+Tại sao dùng Linux 🐧 Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là bloat. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-21T08:25:26+07:00">
+    <meta property="article:modified_time" content="2025-02-21T08:25:26+07:00">
+    <meta property="og:image" content="https://edhlii.github.io/post-covers/arch21-02-25.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edhlii.github.io/post-covers/arch21-02-25.png">
+<meta name="twitter:title" content="Trải nghiệm dùng Linux của mình (Arch btw)">
+<meta name="twitter:description" content="Chào mọi người!
+Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊
+Tại sao dùng Linux 🐧
+Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là bloat. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edhlii.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Trải nghiệm dùng Linux của mình (Arch btw)",
+      "item": "https://edhlii.github.io/posts/trai-nghiem-dung-linux/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Trải nghiệm dùng Linux của mình (Arch btw)",
+  "name": "Trải nghiệm dùng Linux của mình (Arch btw)",
+  "description": "Chào mọi người!\nKhông dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊\nTại sao dùng Linux 🐧 Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là bloat. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Chào mọi người!\nKhông dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊\nTại sao dùng Linux 🐧 Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là bloat. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.\nThêm nữa là linux hoàn toàn free và mã nguồn mở, bạn sẽ không phải tốn một xu khi cài đặt linux. Và hầu hết các phần mềm trên linux cũng như vậy, nên nếu bạn không có dư tiền thì nên cân nhắc linux nhé. Hoặc các bạn có thể tà đạo dùng Windows cờ rắc …khụ…khụ.\nNếu bạn theo chuyên ngành cntt nói chung thì nên tìm hiểu Linux nhé. Hệ điều hành này được ứng dụng rất nhiều đấy. Theo trải nghiệm cá nhân mình thì việc set-up project trên linux tiện hơn windows nhiều 🚀. Bạn gõ vài lệnh trên CLI và mọi thứ đã sẵn sàng để bạn bắt tay vào code. Còn trên Windows thì bạn sẽ phải đánh nhau với cái hệ điều hành, fix cả đống các lỗi mà không liên quan đến dự án bạn đang làm, sau đó mới bắt tay vào code được. Đây là trải nghiệm của mình với thư viện raylib, C++ so sánh giữa Win và Linux đó 😇.\nCấu hình laptop cũ của mình: - CPU: Intel Celeron N3060 - GPU: Intergrated - Ram: 4GB - HDD: 500GB Linux Distro đầu tiên🐦 Mình đã thử nghiệm với Lubuntu. Cái này là một distro giống ubuntu nhưng mà nhẹ hơn nhiều. Dùng LXQt nếu mình nhớ không nhầm (ae tra google cái này nha🤣). Lúc đó mình cài Lubuntu dual boot với Windows.\nLubuntu nhìn như thế này.\nMình dùng thấy nhanh hơn hẳn Windows 🚀. Bình thường lúc mới khởi động Windows ăn hơn 50% RAM, giờ qua dùng cái này thấy máy chạy nhàn hơn nhiều.\nLúc này mình vẫn dùng linux như windows thôi. Mình bắt đầu tập tành dùng dòng lệnh CLI các thứ các thứ.\nThực sự là dùng CLI là một cái gì đấy rất khó tả. Cảm giác lướt ngón tay trên terminal rất gây nghiện. Với CLI của linux bạn có thể làm gần như mọi thứ. Một điều mình rất thích của linux đó là tải phần mềm (thường gọi là package) bằng dòng lệnh luôn. Ví dụ cho việc tải firefox:\nsudo apt install firefox Tất nhiên không thể thiếu các lệnh cơ bản, như cd, mkdir, rm, …\nVà tất nhiên là lệnh neofetch nữa =)).\nQuên chưa nói các bạn, trước khi dùng nó một cách bình thường thì mình phải set-up kha khá. Phải tự mày mò tìm cách cài driver card màn hình tích hợp, bộ gõ tiếng việt, rồi khi cài không được thì phải tra google lỗi đến mệt nghỉ luôn 🤣. Nhiều khi mình làm theo y hệt hướng dẫn mà nó vẫn lỗi, ảo vê xê lờ. Sau khi vật lộn đánh nhau với cái máy tính thì nó đã hoạt động bình thường 😅. Tuy mệt nhưng mà việc mày mò vọc vạch như vậy mình thấy khá vui, cảm thấy một việc rất đơn giản thôi, nhưng làm nó hoạt động được trên linux mình tự nhiên thấy mình vjppromax thực sự 🚀.\nTuy nhiên lúc đó mình sắp thi HSG tin học, mà khổ cái tỉnh mình vẫn dùng CD để lưu bài làm. Phải dùng phần mềm gì trên Windows để burn CD ấy, mình quên tên cmnr🤣. Đại khái là không dùng linux đi thi được. Thế là mình quay lại dùng Windows để cho quen tay.\nThời gian trôi nhanh như chó chạy ngoài đồng. Cuối cùng thì mình đã đạt kết quả khá ổn trong kì thi HSG tỉnh. Cụ thể thì mình đạt giải Ba. Và bố mẹ đã tài trợ tiền lên đời máy cho mình kkk 🤑. Nên mình đã lên ngay một quả distro khác 😋.\nLinux có gì hay 🤨 Lần này mình xin mua máy bàn, vì nó có hiệu năng trên giá thành tốt hơn laptop. Tiền mình được không quá nhiều, nên mình phải suy nghĩ kĩ để mua một bộ hợp lí (cụ thể thì mình có 5 củ khoai 🥔)\nĐen cái lúc đó đúng lúc đang bão giá card đồ họa nữa, thành ra mình mua đc bộ vẫn tương đối cùi. Nhưng mình thấy nó đủ đáp ứng nhu cầu của mình, và tới giờ mình vẫn đang dùng bộ này.\nCấu hình PC của mình: CPU: Intel Core i3 8100 GPU: NVIDIA GTX 750Ti RAM: 16GB (Dual channel) SSD: 128 x 3 GB Và mình đã quyết định thử Ubuntu với con máy mới này.\nUbuntu thì nhìn như thế này.\nDùng Ubuntu mình thấy được cái đẹp hơn Lubuntu (tất nhiên là bloat hơn kkk). Mình thấy sử dụng khá ổn, hợp với những người mới tập tành Linux. Thời điểm này mình bắt đầu luyện thêm skill dùng CLI, git 🤣.\nMột ưu điểm của Ubuntu là nó có giao diện Gnome rất trực quan. Nếu bạn là người mới, muốn trải nghiệm Linux thì bạn nên bắt đầu với distro này. Bạn sẽ không mất quá nhiều thời gian để làm quen với giao diện đâu. Cá nhân mình thì thấy Gnome giống MacOS kiểu gì ấy 😆.\nI use Arch btw 🚀😏 Năm nay mình lên đại học, nên mẹ cho lại con laptop của mẹ. Để mà nói thì nó không phải siêu mạnh, cấu hình siêu khủng, nhưng đáp ứng đầy đủ những nhu cầu của mình. Cơ bản thì quan điểm của mình là laptop phải gọn nhẹ, dễ mang vác. Còn muốn cấu hình mạnh thì dùng máy bàn mà quất. Vậy nên mình không thích những con Laptop Gaming lắm.\nHè năm nay mình đã chuyển qua dùng Arch linux. Cũng tại mình thấy mọi người nói Arch cực kì nhẹ, cực kì nhanh. Và sau khi trải nghiệm thì… đúng là thế thật! Không quá khi nói Arch là distro nhẹ nhất của linux (chắc thua mỗi Alpine linux). Và Arch cũng có thể tùy biến sâu nữa, từ chuyên ngành là ricing ấy 🤣.\nMy Arch Linux\nMình hiện tại đang dùng Window Manager, cụ thể là i3wm. Ban đầu thì hơi lạ lạ, nhưng khi quen rồi thì thực sự khó bỏ lắm! Nó giúp mình năng suất hơn nhiều luôn ấy. Giờ mình không cần dùng chuột nữa mà tay mình gần như chỉ có gõ phím thôi. Cảm giác nó hacker lỏd lắm 🤣.\nThời gian này mình học thêm tool như neovim, git, mấy tools trong ngành an toàn thông tin nx,… Tất nhiên mình ở trình độ gà mờ thôi. Nhưng mình vẫn đang cố gắng cải thiện từng ngày. Cá nhân mình thấy Arch thật sự hợp với nhu cầu của mình, nên mình dùng làm hệ điều hành chính luôn.\nNhược điểm của Linux 😭 Vui vậy thôi nhưng Windows bảo Linux này…\nDù đúng là linux nhẹ hơn, free, tiện cho lập trình, nhưng linux cực kì tệ trong khoản thiết kế, edit, và gaming\nTrước hết thì linux không có các phần mềm của nhà Adobe, nên nếu bạn cần Photoshops, Premier Pro, After Effect, thì chỉ có chịu chết 💀. Tất nhiên vẫn có cách để chạy, các bạn có thể dùng máy ảo, hoặc wine, nhưng mình thấy cách đó nghèo nghiện quá. Linux có các alternative như GIMP, Davinci Resolve, KdenLive, nhưng không hiểu sao mình dùng cứ bị mấy lỗi vớ vẩn. Đơn cử như Davinci Resolve nó cứ không cho dùng GPU để render, rồi nhiều khi còn không hoạt động, crash,… Và mình cũng quen dùng bộ phần mềm của Adobe rồi, vì vậy mình vẫn để Windows dual boot với Arch.😞\nMinh họa cho việc dùng Premiere trên linux\nCòn về việc không chơi được nhiều game thì thật ra cũng không ảnh hưởng mình lắm, mình không chơi game quá nhiều 🎮. Nhưng nếu bạn thích chơi game, đặc biệt là mấy game của Riot thì hiện tại không chơi được 😥. Dù vậy với vài game chơi được trên linux, mình test thì thấy nó mượt hơn trên windows mọi người ạ, ảo ma vcl. Chắc do nó tận dụng được tài nguyên máy tốt hơn. Và một fun fact: SteamOS dùng trên Steam Deck là một Linux Distro.\nSteamOS là Linux Distro\nBạn có nên dùng Linux 🐧? Nếu bạn là người dùng bình thường, có máy tính cấu hình ổn, có nhu cầu sử dụng các phần mềm đồ họa, thiết kế và không hứng thú với việc vọc vạch. Thì các bạn không cần thiết sử dụng Linux nhé 😀.\nNếu bạn là sinh viên cntt, người làm trong lĩnh vực công nghệ (các anh các chú các bác trong lĩnh vực này đều biết linux cả rồi nhưng em xin phép cứ liệt kê vào nhé), thì các bạn nên tìm hiểu về Linux. Các bạn có thể sử dụng Window Subsystem for Linux - WSL, nếu không muốn phải cài đặt nguyên cả cái hệ điều hành. Như vậy bạn vừa có thể dùng Windows, vừa có thể dùng những tinh túy của Linux 😋.\nHoặc nếu bạn như mình, bạn thích một hệ điều hành blazingly fast, thứ mà bạn hoàn toàn có quyền kiểm soát, tùy chỉnh. Bạn đam mê tìm tòi, vọc vạch. Thì Linux chính là hệ điều hành cho bạn 💯.\nLời kết Đây là lần đầu mình viết blog, nếu bạn thấy câu từ lủng củng hay thiếu sót gì thì bỏ qua cho mình nha 😆. Hẹn gặp lại các người anh em trong post sau khi nào mình có hứng để viết 🤣.\n",
+  "wordCount" : "1729",
+  "inLanguage": "en",
+  "image":"https://edhlii.github.io/post-covers/arch21-02-25.png","datePublished": "2025-02-21T08:25:26+07:00",
+  "dateModified": "2025-02-21T08:25:26+07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edhlii.github.io/posts/trai-nghiem-dung-linux/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "edhlii's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edhlii.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edhlii.github.io/" accesskey="h" title="edhlii&#39;s Blog (Alt + H)">edhlii&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edhlii.github.io/" title="edhlii&#39;s Blog">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edhlii.github.io/posts/" title="Posts">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edhlii.github.io/about/" title="About Me">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edhlii.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edhlii.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://edhlii.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://edhlii.github.io/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Trải nghiệm dùng Linux của mình (Arch btw)
+    </h1>
+    <div class="post-meta"><span title='2025-02-21 08:25:26 +0700 +07'>February 21, 2025</span>
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="https://edhlii.github.io/post-covers/arch21-02-25.png" alt="">
+        
+</figure>
+  <div class="post-content"><p>Chào mọi người!</p>
+<p>Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊</p>
+<h1 id="tại-sao-dùng-linux-">Tại sao dùng Linux 🐧<a hidden class="anchor" aria-hidden="true" href="#tại-sao-dùng-linux-">#</a></h1>
+<p>Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là <strong>bloat</strong>. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.</p>
+<p>Thêm nữa là linux hoàn toàn <strong>free</strong> và <strong>mã nguồn mở</strong>, bạn sẽ không phải tốn một xu khi cài đặt linux. Và hầu hết các phần mềm trên linux cũng như vậy, nên nếu bạn không có dư tiền thì nên cân nhắc linux nhé. Hoặc các bạn có thể tà đạo dùng Windows cờ rắc &hellip;khụ&hellip;khụ.</p>
+<p>Nếu bạn theo chuyên ngành cntt nói chung thì nên tìm hiểu Linux nhé. Hệ điều hành này được ứng dụng rất nhiều đấy. Theo trải nghiệm cá nhân mình thì việc set-up project trên linux tiện hơn windows nhiều 🚀. Bạn gõ vài lệnh trên <code>CLI</code> và mọi thứ đã sẵn sàng để bạn bắt tay vào code. Còn trên Windows thì bạn sẽ phải đánh nhau với cái hệ điều hành, fix cả đống các lỗi mà không liên quan đến dự án bạn đang làm, sau đó mới bắt tay vào code được. Đây là trải nghiệm của mình với thư viện raylib, C++ so sánh giữa Win và Linux đó 😇.</p>
+<pre tabindex="0"><code>Cấu hình laptop cũ của mình:
+- CPU: Intel Celeron N3060
+- GPU: Intergrated
+- Ram: 4GB
+- HDD: 500GB
+</code></pre><h1 id="linux-distro-đầu-tiên">Linux Distro đầu tiên🐦<a hidden class="anchor" aria-hidden="true" href="#linux-distro-đầu-tiên">#</a></h1>
+<p>Mình đã thử nghiệm với <strong>Lubuntu</strong>. Cái này là một distro giống ubuntu nhưng mà nhẹ hơn nhiều. Dùng LXQt nếu mình nhớ không nhầm (ae tra google cái này nha🤣). Lúc đó mình cài Lubuntu dual boot với Windows.</p>
+<p><img alt="Anh minh hoa lubuntu" loading="lazy" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdebugpointnews.com%2Fwp-content%2Fuploads%2F2022%2F08%2FLubuntu-22.04-with-LXQt-1.1.0.jpg&f=1&nofb=1&ipt=9330122b5e4bdbad72916ee46e7a71d907a0b04e473deca2dc64c9e89d5ab509&ipo=images" title="lubuntu"> <em>Lubuntu nhìn như thế này.</em></p>
+<p>Mình dùng thấy nhanh hơn hẳn Windows 🚀. Bình thường lúc mới khởi động Windows ăn hơn 50% RAM, giờ qua dùng cái này thấy máy chạy nhàn hơn nhiều.</p>
+<p>Lúc này mình vẫn dùng linux như windows thôi. Mình bắt đầu tập tành dùng dòng lệnh <code>CLI</code> các thứ các thứ.</p>
+<p>Thực sự là dùng CLI là một cái gì đấy rất khó tả. Cảm giác lướt ngón tay trên <strong>terminal</strong> rất gây nghiện. Với CLI của linux bạn có thể làm gần như mọi thứ. Một điều mình rất thích của linux đó là tải phần mềm (thường gọi là package) bằng dòng lệnh luôn.
+Ví dụ cho việc tải firefox:</p>
+<pre tabindex="0"><code>sudo apt install firefox
+</code></pre><p>Tất nhiên không thể thiếu các lệnh cơ bản, như <code>cd</code>, <code>mkdir</code>, <code>rm</code>, &hellip;</p>
+<p>Và tất nhiên là lệnh <code>neofetch</code> nữa =)).</p>
+<p>Quên chưa nói các bạn, trước khi dùng nó một cách <em>bình thường</em> thì mình phải set-up kha khá. Phải tự mày mò tìm cách cài driver card màn hình tích hợp, bộ gõ tiếng việt, rồi khi cài không được thì phải tra google lỗi đến mệt nghỉ luôn 🤣. Nhiều khi mình làm theo y hệt hướng dẫn mà nó vẫn lỗi, ảo vê xê lờ. Sau khi vật lộn đánh nhau với cái máy tính thì nó đã hoạt động bình thường 😅. Tuy mệt nhưng mà việc mày mò vọc vạch như vậy mình thấy khá vui, cảm thấy một việc rất đơn giản thôi, nhưng làm nó hoạt động được trên linux mình tự nhiên thấy mình vjppromax thực sự 🚀.</p>
+<p>Tuy nhiên lúc đó mình sắp thi HSG tin học, mà khổ cái tỉnh mình vẫn dùng CD để lưu bài làm. Phải dùng phần mềm gì trên Windows để burn CD ấy, mình quên tên cmnr🤣. Đại khái là không dùng linux đi thi được. Thế là mình quay lại dùng Windows để cho quen tay.</p>
+<p>Thời gian trôi nhanh như chó chạy ngoài đồng. Cuối cùng thì mình đã đạt kết quả khá ổn trong kì thi HSG tỉnh. Cụ thể thì mình đạt giải Ba. Và bố mẹ đã tài trợ tiền lên đời máy cho mình kkk 🤑. Nên mình đã lên ngay một quả distro khác 😋.</p>
+<h1 id="linux-có-gì-hay-">Linux có gì hay 🤨<a hidden class="anchor" aria-hidden="true" href="#linux-có-gì-hay-">#</a></h1>
+<p>Lần này mình xin mua máy bàn, vì nó có hiệu năng trên giá thành tốt hơn laptop.
+Tiền mình được không quá nhiều, nên mình phải suy nghĩ kĩ để mua một bộ hợp lí (cụ thể thì mình có 5 củ khoai 🥔)</p>
+<p>Đen cái lúc đó đúng lúc đang bão giá card đồ họa nữa, thành ra mình mua đc bộ vẫn tương đối cùi. Nhưng mình thấy nó đủ đáp ứng nhu cầu của mình, và tới giờ mình vẫn đang dùng bộ này.</p>
+<pre tabindex="0"><code>Cấu hình PC của mình:
+CPU: Intel Core i3 8100
+GPU: NVIDIA GTX 750Ti
+RAM: 16GB (Dual channel)
+SSD: 128 x 3 GB
+</code></pre><p>Và mình đã quyết định thử Ubuntu với con máy mới này.</p>
+<p><img alt="Ubuntu image" loading="lazy" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fitsubuntu.com%2Fwp-content%2Fuploads%2F2022%2F09%2FUbuntu-Unity-Is-Now-Official-Ubuntu-Flavor.jpg&f=1&nofb=1&ipt=21567ca5b4930e879b674a3b248ed815302014378522333382c9b2d4610abef0&ipo=images" title="Ubuntu"> <em>Ubuntu thì nhìn như thế này.</em></p>
+<p>Dùng Ubuntu mình thấy được cái đẹp hơn Lubuntu (tất nhiên là <strong>bloat</strong> hơn kkk). Mình thấy sử dụng khá ổn, hợp với những người mới tập tành Linux. Thời điểm này mình bắt đầu luyện thêm skill dùng <code>CLI, git</code> 🤣.</p>
+<p>Một ưu điểm của <strong>Ubuntu</strong> là nó có giao diện <strong>Gnome</strong> rất trực quan. Nếu bạn là người mới, muốn trải nghiệm Linux thì bạn nên bắt đầu với distro này. Bạn sẽ không mất quá nhiều thời gian để làm quen với giao diện đâu. Cá nhân mình thì thấy <strong>Gnome</strong> giống MacOS kiểu gì ấy 😆.</p>
+<h1 id="i-use-arch-btw-">I use Arch btw 🚀😏<a hidden class="anchor" aria-hidden="true" href="#i-use-arch-btw-">#</a></h1>
+<p>Năm nay mình lên đại học, nên mẹ cho lại con laptop của mẹ. Để mà nói thì nó không phải <strong>siêu mạnh, cấu hình siêu khủng</strong>, nhưng đáp ứng đầy đủ những nhu cầu của mình. Cơ bản thì quan điểm của mình là laptop phải gọn nhẹ, dễ mang vác. Còn muốn cấu hình mạnh thì dùng máy bàn mà quất. Vậy nên mình không thích những con <strong>Laptop Gaming</strong> lắm.</p>
+<p>Hè năm nay mình đã chuyển qua dùng Arch linux. Cũng tại mình thấy mọi người nói Arch <strong>cực kì nhẹ</strong>, <strong>cực kì nhanh</strong>. Và sau khi trải nghiệm thì&hellip; đúng là thế thật! Không quá khi nói Arch là distro nhẹ nhất của linux (chắc thua mỗi Alpine linux). Và Arch cũng có thể tùy biến sâu nữa, từ chuyên ngành là <code>ricing</code> ấy 🤣.</p>
+<p><img alt="fastfetch archlinux" loading="lazy" src="/arch.png" title="fastfetch trên Arch linux của mình"> <em>My Arch Linux</em></p>
+<p>Mình hiện tại đang dùng Window Manager, cụ thể là i3wm. Ban đầu thì hơi lạ lạ, nhưng khi quen rồi thì thực sự khó bỏ lắm! Nó giúp mình năng suất hơn nhiều luôn ấy. Giờ mình không cần dùng chuột nữa mà tay mình gần như chỉ có gõ phím thôi. Cảm giác nó <strong><em>hacker lỏd</em></strong> lắm 🤣.</p>
+<p>Thời gian này mình học thêm tool như neovim, git, mấy tools trong ngành an toàn thông tin nx,&hellip; Tất nhiên mình ở trình độ gà mờ thôi. Nhưng mình vẫn đang cố gắng cải thiện từng ngày. Cá nhân mình thấy Arch thật sự hợp với nhu cầu của mình, nên mình dùng làm hệ điều hành chính luôn.</p>
+<h1 id="nhược-điểm-của-linux-">Nhược điểm của Linux 😭<a hidden class="anchor" aria-hidden="true" href="#nhược-điểm-của-linux-">#</a></h1>
+<p>Vui vậy thôi nhưng Windows bảo Linux này&hellip;</p>
+<p>Dù đúng là linux nhẹ hơn, free, tiện cho lập trình, nhưng linux <strong>cực kì tệ</strong> trong khoản <strong>thiết kế, edit, và gaming</strong></p>
+<p>Trước hết thì linux không có các phần mềm của nhà <strong>Adobe</strong>, nên nếu bạn cần Photoshops, Premier Pro, After Effect, thì chỉ có chịu chết 💀. Tất nhiên vẫn có cách để chạy, các bạn có thể dùng máy ảo, hoặc <code>wine</code>, nhưng mình thấy cách đó nghèo nghiện quá. Linux có các <strong>alternative</strong> như GIMP, Davinci Resolve, KdenLive, nhưng không hiểu sao mình dùng cứ bị mấy lỗi vớ vẩn. Đơn cử như Davinci Resolve nó cứ không cho dùng GPU để render, rồi nhiều khi còn không hoạt động, crash,&hellip; Và mình cũng quen dùng bộ phần mềm của Adobe rồi, vì vậy mình vẫn để Windows dual boot với Arch.😞</p>
+<p><img alt="Premiere in arch linux" loading="lazy" src="https://i.redd.it/5yehh3rcxcmc1.png" title="Minh họa cho việc dùng Premiere trên linux"> <em>Minh họa cho việc dùng Premiere trên linux</em></p>
+<p>Còn về việc không chơi được nhiều game thì thật ra cũng không ảnh hưởng mình lắm, mình không chơi game quá nhiều 🎮. Nhưng nếu bạn thích chơi game, đặc biệt là mấy game của <strong>Riot</strong> thì hiện tại không chơi được 😥. Dù vậy với vài game chơi được trên linux, mình test thì thấy nó mượt hơn trên windows mọi người ạ, ảo ma vcl. Chắc do nó tận dụng được tài nguyên máy tốt hơn. Và một fun fact: <code>SteamOS dùng trên Steam Deck là một Linux Distro</code>.</p>
+<p><img alt="Steam OS" loading="lazy" src="https://cdn-media.sforum.vn/storage/app/media/phuoctoan/SteamOS/steam-os-toi-uu-hay-tiec-nuoi-cho-game-thu-9.jpg" title="SteamOS là Linux Distro"> <em>SteamOS là Linux Distro</em></p>
+<h1 id="bạn-có-nên-dùng-linux-">Bạn có nên dùng Linux 🐧?<a hidden class="anchor" aria-hidden="true" href="#bạn-có-nên-dùng-linux-">#</a></h1>
+<p>Nếu bạn là người dùng bình thường, có máy tính cấu hình ổn, có nhu cầu sử dụng các phần mềm đồ họa, thiết kế và không hứng thú với việc vọc vạch. Thì các bạn không cần thiết sử dụng Linux nhé 😀.</p>
+<p>Nếu bạn là sinh viên cntt, người làm trong lĩnh vực công nghệ (các anh các chú các bác trong lĩnh vực này đều biết linux cả rồi nhưng em xin phép cứ liệt kê vào nhé), thì các bạn nên tìm hiểu về Linux. Các bạn có thể sử dụng Window Subsystem for Linux - <code>WSL</code>, nếu không muốn phải cài đặt nguyên cả cái hệ điều hành. Như vậy bạn vừa có thể dùng Windows, vừa có thể dùng những tinh túy của Linux 😋.</p>
+<p>Hoặc nếu bạn như mình, bạn thích một hệ điều hành <strong>blazingly fast</strong>, thứ mà bạn hoàn toàn có quyền kiểm soát, tùy chỉnh. Bạn đam mê tìm tòi, vọc vạch. Thì Linux chính là hệ điều hành cho bạn 💯.</p>
+<h1 id="lời-kết">Lời kết<a hidden class="anchor" aria-hidden="true" href="#lời-kết">#</a></h1>
+<p>Đây là lần đầu mình viết blog, nếu bạn thấy câu từ lủng củng hay thiếu sót gì thì bỏ qua cho mình nha 😆. Hẹn gặp lại các người anh em trong post sau khi nào mình có hứng để viết 🤣.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://edhlii.github.io/posts/first-post/">
+    <span class="title">Next »</span>
+    <br>
+    <span>First Post</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edhlii.github.io/">edhlii&#39;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
