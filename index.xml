@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>edhlii&#39;s Blog</title>
+    <link>https://edhlii.github.io/</link>
+    <description>Recent content on edhlii&#39;s Blog</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Feb 2025 08:25:26 +0700</lastBuildDate>
+    <atom:link href="https://edhlii.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trải nghiệm dùng Linux của mình (Arch btw)</title>
+      <link>https://edhlii.github.io/posts/trai-nghiem-dung-linux/</link>
+      <pubDate>Fri, 21 Feb 2025 08:25:26 +0700</pubDate>
+      <guid>https://edhlii.github.io/posts/trai-nghiem-dung-linux/</guid>
+      <description>&lt;p&gt;Chào mọi người!&lt;/p&gt;
+&lt;p&gt;Không dài dòng, thì như cái tiêu đề, mình là một người dùng Linux fulltime (Arch btw). Mình viết bài này để chia sẻ trải nghiệm của mình, để các bạn có thể tham khảo và cân nhắc xem nên chuyển qua Linux không. Bây giờ vào nội dung chính nha 😊&lt;/p&gt;
+&lt;h1 id=&#34;tại-sao-dùng-linux-&#34;&gt;Tại sao dùng Linux 🐧&lt;/h1&gt;
+&lt;p&gt;Quay lại hồi cấp 3 của mình. Lúc đó mình chỉ có con laptop cùi cùi, lướt web còn lag (mấy og đừng có bảo tôi coi cái gì vớ vẩn nhá 😮). Lí do vì Windows rất là &lt;strong&gt;bloat&lt;/strong&gt;. Nên mình quyết định thử chuyển qua Linux dùng, vì mình nghe nói Linux nhẹ hơn Windows rất nhiều. Sau đó thì dùng quen nên dùng tới bây giờ luôn lmao 🤣.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>https://edhlii.github.io/posts/first-post/</link>
+      <pubDate>Thu, 20 Feb 2025 16:28:32 +0700</pubDate>
+      <guid>https://edhlii.github.io/posts/first-post/</guid>
+      <description>Like the title have just said!</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://edhlii.github.io/about/</link>
+      <pubDate>Thu, 20 Feb 2025 10:00:00 +0700</pubDate>
+      <guid>https://edhlii.github.io/about/</guid>
+      <description>&lt;h1 id=&#34;about-me-&#34;&gt;About Me 🚀&lt;/h1&gt;
+&lt;p&gt;Welcome to my corner of the web! 💻&lt;/p&gt;
+&lt;p&gt;My name is Hieu a.k.a edhlii. I&amp;rsquo;m a freshman majoring in &lt;strong&gt;Information Technology&lt;/strong&gt; at &lt;strong&gt;Posts and Telecommunication Institute of Technology&lt;/strong&gt;. I&amp;rsquo;m from &lt;strong&gt;Viet Nam&lt;/strong&gt; 🇻🇳.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a passionate programmer, always exploring new technologies and building cool projects. My interests range from game development 🎮 and AI 🤖 to web design 🌐 and cybersecurity 🔐. When I&amp;rsquo;m not coding, I enjoy watching anime 🎞️ and occasionally playing games.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
