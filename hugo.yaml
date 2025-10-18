@@ -1,6 +1,6 @@
 baseURL: https://edhlii.github.io/
 languageCode: en-us
-title: Hieu's Blog
+title: kuripuri's Blog
 theme: ["PaperMod"]
 
 buildDrafts: false
@@ -29,8 +29,8 @@ menu:
 params:
   profileMode:
     enabled: true
-    title: "Lê Đình Hiếu" # optional default will be site title
-    subtitle: "Sinh viên ATTT khoá D24, PTIT."
+    title: "kuripuri" # optional default will be site title
+    subtitle: "Blog thập cẩm."
     imageUrl: "maka-pfp.jpg" # optional
     # imageTitle: "<title of image as alt>" # optional
     imageWidth: 200 # custom size
