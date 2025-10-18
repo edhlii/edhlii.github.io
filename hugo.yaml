@@ -1,0 +1,44 @@
+baseURL: https://edhlii.github.io/
+languageCode: en-us
+title: Hieu's Blog
+theme: ["PaperMod"]
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableRobotsTXT: true
+
+menu:
+  main:
+    - name: "Home"
+      pageRef: "/"
+      weight: 1
+    - name: "Blog"
+      pageRef: "/posts/"
+      weight: 2
+    - name: "About"
+      pageRef: "/about/"
+      weight: 3
+    - name: "Search"
+      pageRef: "/search/"
+      weight: 4
+    - name: "Archive"
+      pageRef: "/archive/"
+      weight: 5
+
+params:
+  profileMode:
+    enabled: true
+    title: "Lê Đình Hiếu" # optional default will be site title
+    subtitle: "Sinh viên ATTT khoá D24, PTIT."
+    imageUrl: "maka-pfp.jpg" # optional
+    # imageTitle: "<title of image as alt>" # optional
+    imageWidth: 200 # custom size
+    imageHeight: 200 # custom size
+    buttons:
+
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/edhlii"
+    - name: "Youtube"
+      url: "https://www.youtube.com/@Ledhonthestage"
