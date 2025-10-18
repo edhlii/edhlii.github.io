@@ -26,6 +26,6 @@ Feel free to connect with me:
 
 - **GitHub**: [edhlii](https://github.com/edhlii) 🐙
 - **YouTube**: [Ledh](https://youtube.com/@Ledhonthestage) ▶️
-- **Email**: <ldinhieu16@gmail.com> ✉️
+- **Email**: <hieuld.b24at095@stu.ptit.edu.vn> ✉️
 
 Thanks for stopping by! 🚀
