@@ -1,12 +1,12 @@
 ---
 date: '2025-10-20T16:41:43+07:00'
 draft: false
-title: 'Java Buổi 2: Collection và Collections'
+title: 'Java Buổi 2: Object là gì?'
 cover:
   image: 'image.png'
 ---
 Haloo!  
-Chào mọi người, hôm nay tiếp tục chuyên mục tự học Java nha. Buổi này ta sẽ cùng học về Collection và Collections!  
+Chào mọi người, hôm nay tiếp tục chuyên mục tự học Java nha. Buổi này ta sẽ cùng học về Object!  
 
 **Buổi 2: Object**
 
