@@ -1,7 +1,7 @@
 ---
 date: '2025-10-19T10:56:53+07:00'
 draft: false
-title: 'Java Buổi 1: Tổng quan về Java, Syntax cơ bản.'
+title: 'Java Core Buổi 1: Tổng quan về Java, Syntax cơ bản.'
 cover:
   image: 'image.png'
 

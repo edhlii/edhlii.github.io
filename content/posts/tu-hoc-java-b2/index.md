@@ -1,7 +1,7 @@
 ---
 date: '2025-10-20T16:41:43+07:00'
 draft: false
-title: 'Java Buổi 2: Object là gì?'
+title: 'Java Core Buổi 2: Object là gì?'
 cover:
   image: 'image.png'
 ---
