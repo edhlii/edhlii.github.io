@@ -8,6 +8,26 @@ cover:
 
 Write up này tự nhiên có hứng viết bằng tiếng Anh. Nên sai chính tả mn thông cảm nha.
 
+- [Reverse Engineer](#reverse-engineer)
+  - [BabyRust0](#babyrust0)
+  - [pyxe](#pyxe)
+  - [babylua](#babylua)
+  - [ChildRust](#childrust)
+- [Pwn](#pwn)
+  - [Introduction to pwntools](#introduction-to-pwntools)
+  - [bof\_1](#bof_1)
+  - [bof\_2](#bof_2)
+  - [bof\_3](#bof_3)
+  - [int\_1](#int_1)
+  - [bof\_4](#bof_4)
+  - [shell\_1](#shell_1)
+  - [index\_1](#index_1)
+  - [ret2libc](#ret2libc)
+    - [Stage 1: Leak libc address.](#stage-1-leak-libc-address)
+    - [Stage 2: Spawn shell](#stage-2-spawn-shell)
+  - [fmt\_1](#fmt_1)
+  - [fmt\_2](#fmt_2)
+
 # Reverse Engineer
 
 ## BabyRust0
