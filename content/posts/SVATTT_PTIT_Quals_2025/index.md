@@ -1,9 +1,9 @@
 ---
 date: '2026-02-26T10:15:41+07:00'
 draft: false
-title: 'BKSec Training 2026 Writeup'
+title: 'Writeup Vòng loại Đội tuyển SVATTT PTIT 2026'
 cover:
-  image: 'image.png'
+  image: 'image-5.png'
 ---
 
 
