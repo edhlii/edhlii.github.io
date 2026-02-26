@@ -1,31 +1,32 @@
 ---
 title: "About Me"
-date: 2025-02-20T10:00:00+07:00
+date: 2026-02-26T10:00:00+07:00
 ---
 
 # About Me 🚀
 
-Welcome to my corner of the web! 💻
+Chào mừng mn tới với blog này.
 
-My name is Hieu a.k.a edhlii. I'm a freshman majoring in **Information Technology** at **Posts and Telecommunication Institute of Technology**. I'm from **Viet Nam** 🇻🇳.
+Tôi/Mình là Hiếu (handle name kuripuri, tên đặt hồi c2 nên đừng hỏi ý nghĩa). Hiện mình học **An toàn thông tin** ở **Học viện Công nghệ Bưu chính Viễn thông**. Mình là người **Việt Nam** 🇻🇳.
 
-I'm a passionate programmer, always exploring new technologies and building cool projects. My interests range from game development 🎮 and AI 🤖 to web design 🌐 and cybersecurity 🔐. When I'm not coding, I enjoy watching anime 🎞️ and occasionally playing games.
+Mình hứng thú với lập trình và công nghệ thông tin nói chung. Game, web, security, A.I mình đều học cả (thành ra ko có gì nên hồn T_T). Mình vẫn tập trung vào security nhiều hơn. Ngoài ra thì mình hay xem anime trong thời gian rảnh. Lâu lâu mình có chơi game, nhưng chơi 1 giai đoạn rồi lại chán, rồi lại bỏ.
 
-## This Blog ✍️
+# This Blog ✍️
 
-This site is a personal space where I share thoughts, experiences, and technical insights. Expect posts about:
+Nói chung thì lâu lâu có hứng mình mới viết thôi. Chủ yếu mình sẽ đăng writeup của mình ở đây. Các chủ đề có thể gồm:
 
-- Programming (C++, Python, Neovim, etc.) 💾
-- Game development (Raylib, SDL2, and beyond) 🎮
-- Cybersecurity and infosec topics 🔐
-- My daily life stuffs ♥
+- CTF-Writeups.
+- Các chủ đề về an toàn thông tin.
+- Lập trình (C++, Python, Neovim, etc.).
+- Cuộc sống thường ngày.
+- ...vân vân...
 
-## Get in Touch 📬
+# Get in Touch 📬
 
-Feel free to connect with me:
+Một vài thông tin của mình:
 
-- **GitHub**: [edhlii](https://github.com/edhlii) 🐙
-- **YouTube**: [Ledh](https://youtube.com/@Ledhonthestage) ▶️
-- **Email**: <hieuld.b24at095@stu.ptit.edu.vn> ✉️
+- **GitHub**: [edhlii](https://github.com/edhlii)
+- **YouTube**: [hieuuld](https://youtube.com/@Ledhonthestage)
+- **Email**: <hieuld.b24at095@stu.ptit.edu.vn>
 
 Thanks for stopping by! 🚀
