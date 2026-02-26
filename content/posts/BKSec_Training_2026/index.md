@@ -3,7 +3,7 @@ date: '2026-02-26T10:15:41+07:00'
 draft: false
 title: 'BKSec Training 2026 Writeup'
 cover:
-  image: 'team-trojan.jpg'
+  image: 'image.png'
 ---
 
 Write up này tự nhiên có hứng viết bằng tiếng Anh. Nên sai chính tả mn thông cảm nha.

@@ -1,3 +1,12 @@
+---
+date: '2026-02-26T10:15:41+07:00'
+draft: false
+title: 'BKSec Training 2026 Writeup'
+cover:
+  image: 'image.png'
+---
+
+
 **LƯU Ý:**
 
 Đây không phải write-up 100% tự làm. Tôi đang làm lại những bài mình còn bị mắc. Trong quá trình đó tôi có đọc write-up của những người khác và nhiều nguồn khác nữa. Đây giống như một bản note tôi viết để chính mình đọc và học hỏi từ các challenge cũ.
